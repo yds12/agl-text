@@ -17,6 +17,10 @@ debug: imagefont.cpp
 test: test.cpp
 	g++ -g -o test test.cpp ../lib/libagl-text.so -lagl -lagl-graphics
 
+# Install the AGL library (debug) on the system
+install_debug:
+	../install_debug.sh
+
 # Install the AGL library on the system
 install:
 	../install.sh
